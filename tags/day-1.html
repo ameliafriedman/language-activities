@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/day-1/
+title: "Day 1"
+---
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+{% for post in site.tags.Day-1 %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/realia/
+title: "Realia"
+---
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+{% for post in site.tags.Realia %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

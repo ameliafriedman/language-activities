@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/backup/
+title: "Board"
+---
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+{% for post in site.tags.Board %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

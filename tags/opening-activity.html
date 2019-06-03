@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/opening-activity/
+title: "Opening Activity"
+---
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+{% for post in site.tags.Opening-Activity %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

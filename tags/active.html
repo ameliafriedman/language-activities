@@ -3,7 +3,11 @@ layout: page
 permalink: /tags/active/
 title: "Active"
 ---
-
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
 
 {% for post in site.tags.Active %}
 <li><a href="{{ post.url }}">{{ post.title }}</a></li>

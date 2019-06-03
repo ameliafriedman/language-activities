@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/quick/
+title: "Quick"
+---
+
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+{% for post in site.tags.Quick %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /categories/questions/
+title: "Questions"
+---
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+
+{% for post in site.categories.Questions %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}

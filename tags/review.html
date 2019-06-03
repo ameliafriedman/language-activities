@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /tags/review/
+title: "Review"
+---
+
+<style>
+    li {
+        list-style-type: none;
+    }
+</style>
+{% for post in site.tags.Review %}
+<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
