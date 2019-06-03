@@ -16,9 +16,9 @@
 title: Language Learning Activities Database
 email: ameliafriedman@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Created by the Student Language Exchange and maintained by Amelia Friedman(http://www.ameliafriedman.com/)
-baseurl: /language-activities # the subpath of your site, e.g. /blog
-url: ameliafriedman.github.io # the base hostname & protocol for your site, e.g. http://example.com
+  Created by the Student Language Exchange and maintained by Amelia Friedman (http://www.ameliafriedman.com/)
+baseurl: "/language-activities" # the subpath of your site, e.g. /blog
+url: "ameliafriedman.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ameliafriedman
 github_username:  ameliafriedman
 
