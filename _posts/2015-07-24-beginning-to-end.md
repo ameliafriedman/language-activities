@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "template"
+title:  "Beginning to End"
 author: sleteam
 date:   2015-07-24 12:00:02 -0400
 categories: [Vocabulary]
