@@ -5,10 +5,107 @@ title: "Tags"
 ---
 
 <style>
+    h1 {
+        font-size: 42px
+    }
+
+    .pagination a,
+    .pagination span {
+        padding: 7px 18px;
+        border: 1px solid #eee;
+        margin-left: -2px;
+        margin-right: -2px;
+        background-color: #ffffff;
+        display: inline-block;
+    }
+
     li {
         list-style-type: none;
     }
+
+    .pagination a {
+        &:hover {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+    }
+
+    .pagination {
+        text-align: center;
+    }
+
+    /* The sidebar menu */
+    .sidenav {
+        height: 100%;
+        /* Full-height: remove this if you want "auto" height */
+        width: 160px;
+        /* Set the width of the sidebar */
+        position: fixed;
+        /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 1;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        left: 0;
+        background-color: #fdfdfd;
+        /* Black */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding: 20px 0 30px 15px;
+        /* margin-top: 61px; */
+        border: 1px solid #e8e8e8;
+        border-top: 5px solid #424242;
+    }
+
+    /* .sidenav .archive-group {
+          padding-bottom: 5px;
+        } */
+
+    .sidenav h4 {
+        padding-top: 5px;
+    }
+
+    .sidebardiv {
+        padding: 5px 0 15px;
+    }
+
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        /* font-size: 25px; */
+        color: #2b2a2a;
+        display: block;
+    }
+
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover {
+        color: #1e59a5;
+    }
 </style>
+<div class="sidenav">
+    <div class="sidebardiv">
+        <h4>Categories</h4>
+        {% for category in site.categories %}
+        <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{% endcapture %}
+            <li><a href="categories/{{ category_name }}">{{ category_name }}</a></li>
+        </div>
+
+        {% endfor %}
+    </div>
+    <div class="sidebardiv">
+        <h4>Tags</h4>
+        {% for tag in site.tags %}
+        <div class="archive-group">
+            {% capture tag_name %}{{ tag | first }}{% endcapture %}
+            <li><a href="tags/{{ tag_name }}">{{ tag_name }}</a></li>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
 <div id="archives">
     {% for tag in site.tags %}
     <div class="archive-group">

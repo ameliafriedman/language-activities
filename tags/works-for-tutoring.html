@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /tags/works-for-tutoring/
-title: "Works for Tutoring"
+title: "Tag: Works for Tutoring"
 ---
 <style>
     li {
@@ -10,7 +10,5 @@ title: "Works for Tutoring"
 </style>
 
 {% for post in site.tags.Works-for-Tutoring %}
-<li>
-    <h3><a href="/language-activities{{ post.url }}">{{ post.title }}</a></h3>
-</li>
+<li><a href="/language-activities{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
