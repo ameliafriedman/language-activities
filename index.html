@@ -87,7 +87,8 @@ layout: page
 <div class="sidenav">
   <div class="sidebardiv">
     <h4>Categories</h4>
-    {% for category in site.categories %}
+    {% assign sorted-categories = site.categories | sort %}
+    {% for category in sorted-categories %}
     <div class="archive-group">
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <li><a href="categories/{{ category_name }}">{{ category_name }}</a></li>
@@ -97,7 +98,8 @@ layout: page
   </div>
   <div class="sidebardiv">
     <h4>Tags</h4>
-    {% for tag in site.tags %}
+    {% assign sorted-tags = site.tags | sort %}
+    {% for tag in sorted-tags %}
     <div class="archive-group">
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
       <li><a href="tags/{{ tag_name }}">{{ tag_name }}</a></li>
