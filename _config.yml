@@ -33,7 +33,7 @@ plugins:
   - jekyll-paginate
   # - jekyll-paginate-v2
 
-include: ['_pages']
+include: ['_pages', 'language-activities', 'language-activities/categories', 'language-activities/tags']
 relative_permalinks: false
 # pagination:
 #   enabled: true
