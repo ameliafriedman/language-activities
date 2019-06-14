@@ -33,7 +33,7 @@ plugins:
   - jekyll-paginate
   # - jekyll-paginate-v2
 
-include: ['_pages', '_pages/categories', '_pages/tags']
+include: ['_pages', '_categories', '_tags']
 
 # pagination:
 #   enabled: true
