@@ -34,7 +34,7 @@ plugins:
   # - jekyll-paginate-v2
 
 include: ['_pages', '_categories', '_tags']
-
+relative_permalinks: false
 # pagination:
 #   enabled: true
 #   per_page: 10
