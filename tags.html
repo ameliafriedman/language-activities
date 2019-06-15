@@ -90,7 +90,7 @@ title: "Tags"
         {% for category in sorted-categories %}
         <div class="archive-group">
             {% capture category_name %}{{ category | first }}{% endcapture %}
-            <li><a href="categories/{{ category }}">{{ category_name }}</a></li>
+            <li><a href="categories/{{ category_name }}">{{ category_name }}</a></li>
         </div>
 
         {% endfor %}
@@ -101,7 +101,7 @@ title: "Tags"
         {% for tag in sorted-tags %}
         <div class="archive-group">
             {% capture tag_name %}{{ tag | first }}{% endcapture %}
-            <li><a href="tags/{{ tag }}">{{ tag_name }}</a></li>
+            <li><a href="tags/{{ tag_name }}">{{ tag_name }}</a></li>
         </div>
 
         {% endfor %}
@@ -113,7 +113,7 @@ title: "Tags"
     {% for tag in sorted-tags %}
     <div class="archive-group">
         {% capture tag_name %}{{ tag | first }}{% endcapture %}
-        <li><a href="{{ tag }}">{{ tag_name }}</a></li>
+        <li><a href="{{ tag_name | downcase }}">{{ tag_name }}</a></li>
     </div>
 
     {% endfor %}
