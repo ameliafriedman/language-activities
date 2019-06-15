@@ -91,7 +91,7 @@ layout: page
     {% for category in sorted-categories %}
     <div class="archive-group">
       {% capture category_name %}{{ category | first }}{% endcapture %}
-      <li><a href="categories/{{ category_name }}">{{ category_name }}</a></li>
+      <li><a href="categories/{{ category_name | downcase }}">{{ category_name }}</a></li>
     </div>
 
     {% endfor %}
@@ -102,7 +102,7 @@ layout: page
     {% for tag in sorted-tags %}
     <div class="archive-group">
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
-      <li><a href="tags/{{ tag_name }}">{{ tag_name }}</a></li>
+      <li><a href="tags/{{ tag_name | downcase }}">{{ tag_name }}</a></li>
     </div>
 
     {% endfor %}

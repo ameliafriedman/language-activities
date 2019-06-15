@@ -49,7 +49,7 @@
                     {% assign categories = page.categories %}
                     {% endif %}
                     {% for category in categories %}
-                    <a href="{{site.baseurl}}/categories/{{category|slugize}}">{{category}}</a>
+                    <a href="{{site.baseurl}}/categories/{{category|downcase}}">{{category}}</a>
                     {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
                 </div>
@@ -61,7 +61,7 @@
                     {% assign tags = page.tags %}
                     {% endif %}
                     {% for tag in tags %}
-                    <a href="{{site.baseurl}}/tags/{{tag|slugize}}">{{tag}}</a>
+                    <a href="{{site.baseurl}}/tags/{{tag|downcase}}">{{tag}}</a>
                     {% unless forloop.last %}&nbsp;{% endunless %}
                     {% endfor %}
                 </div>
